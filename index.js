@@ -41,8 +41,8 @@ function lagrangeInterpolation(points) {
 app.post("/calculateSecretCode", (req, res) => {
     try {
         // Read the JSON files
-        const testCase1 = JSON.parse(fs.readFileSync('testcase1POST.BODY.json', 'utf8'));
-        const testCase2 = JSON.parse(fs.readFileSync('testCase2POSTBody.json', 'utf8'));
+        const testCase1 = JSON.parse(fs.readFileSync('tc1.BODY.json', 'utf8'));
+        const testCase2 = JSON.parse(fs.readFileSync('tc2.json', 'utf8'));
 
         // Here you can choose which test case to use
         const inputData = testCase1; // or testCase2 based on your needs
